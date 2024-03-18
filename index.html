@@ -1,0 +1,53 @@
+<!DOCTYPE html/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Encriptador de texto</title>
+    <link rel="icon"  href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1 class = Bienvenida>Bienvenido al encriptador de texto</h1>
+    <div class="container">
+        <div class="encriptar">
+            <textarea
+            onkeyup="minusculaAcento(this);"
+            name="texto"
+            class="texto" 
+            id="texto" 
+            cols="30" 
+            rows="10" 
+            placeholder="Ingresa el texto a encriptar"
+            ></textarea>
+       
+        <div class="terminos">
+            <p>Solo letras minusculas y sin acento</p>
+        </div>
+
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+
+            <input 
+                type="button" 
+                class="btn-desencriptar" value="desencriptar" 
+                onclick="desencriptar()"
+            />
+        </div>
+    </div>
+    <div class="Encriptado">
+        <img src="encriptemos.png" alt="" id="muneco">
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+            <p id="parrafo">Ingresa texto que deseas encriptar o desencriptar</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+
+<footer class="pie">
+    <p>Sofia Teshe / dsgt.superate@gmail.com </p>
+</footer>
+</html>
